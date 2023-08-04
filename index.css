@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  --header-color: hsla(266, 71%, 47%, 1);
+}
+header {
+  padding: 20px;
+}
+.nav-bar, ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#check {
+  display: none; 
+}
