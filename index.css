@@ -129,10 +129,9 @@ button {
 }
 .footer-items {
   margin-top: 100px;
-  /* padding-top: 50px; */
   justify-content: space-around;
   background: var(--faded-white);
-  height: 400px;
+  height: 500px;
 }
 
 figcaption {
@@ -292,16 +291,17 @@ figcaption {
     font-size: 1.5rem;
     line-height: 1.2;
   }
+  .footer-items {
+    height: 100%;
+    padding-bottom: 40px;
+  }
   .cover div {
     margin-top: 0;
   }
   .cover {
     margin: 50px 0;
   }
-  .footer-items {
-    height: 100%;
-    width: 100%;
-  }
+  
 }
 
 @media (max-width: 500px) {
