@@ -1,5 +1,3 @@
-
-/* nav bar */
 *,
 *::after,
 *::before {
@@ -28,8 +26,6 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
-
-
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
@@ -109,13 +105,12 @@ ul li .get_quote, button {
   align-items: start;
   gap: 15px;
 }
-
 .the_journey {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: hsla(0, 3%, 42%, 1);
 }
 .design {
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.2;
 }
 .design span {
@@ -124,7 +119,44 @@ ul li .get_quote, button {
 .first_container img {
   width: 650px;
 }
+button {
+  padding: 6px 40px;
+  background: var(--header-color);
+  border-radius: 33px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+.footer-items {
+  margin-top: 100px;
+  /* padding-top: 50px; */
+  justify-content: space-around;
+  background: var(--faded-white);
+  height: 400px;
+}
 
+figcaption {
+  margin: 10px 0 0 10px;
+  color: var(--header-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.lorem {
+  margin: 60px 0 0 10px;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.footer-items .cover {
+  background: hsla(277, 71%, 99%, 1);
+  width: 250px;
+  height: 200px;
+  flex-direction: column;
+  border-radius: 33px 33px 10px 10px;
+}
+.cover div {
+  margin-top: -60px;
+}
 
 
 @media (max-width: 768px) {
@@ -215,7 +247,7 @@ ul li .get_quote, button {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .navbar-container input[type="checkbox"]:checked~.menu-items {
@@ -233,20 +265,41 @@ ul li .get_quote, button {
   .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
-
+  .flex-mobile {
+    flex-wrap: wrap;
+  }
   .flex-column {
     flex-direction: column-reverse;
     align-items: center;
   }
   .comment {
     margin-top: 40px;
-    margin-left: 200px;
   }
   .first_container img {
-   max-width: 400px;
+   width: 100%;
+   text-align: center;
   }
   .w-100 {
     width: 100%;
+  }
+  .font-classified {
+    font-size: 20px;
+  }
+  .the_journey {
+    font-size: 1rem;
+  }
+  .design {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .cover div {
+    margin-top: 0;
+  }
+  .cover {
+    margin: 50px 0;
+  }
+  .footer-items {
+    height: 100%;
   }
 }
 
@@ -256,170 +309,3 @@ ul li .get_quote, button {
   }
 }
 
-
-/* nav bar end */
-
-/* :root {
-  --header-color: hsla(266, 71%, 47%, 1);
-  --black-color: hsla(0, 0%, 0%, 1);
-  --faded-white: hsla(0, 0%, 100%, 1);
-}
-
-body {
-  background: hsla(300, 4%, 85%, 0.999);
-}
-
-header {
-  padding-top: 40px;
-}
-
-.flex-defined,
-.flex-column {
-  display: flex;
-  align-items: center;
-}
-
-.nav-bar {
-  justify-content: space-between;
-  padding: 0 100px;
-}
-
-.logo-color {
-  color: var(--header-color);
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-family: 'Playfair Display SC'
-}
-
-.font-classified {
-  font-size: 1.875rem;
-  font-weight: 700;
-}
-
-ul {
-  align-items: center;
-  gap: 60px;
-  font-size: 1.875rem;
-  font-weight: 400;
-}
-
-ul li a {
-  color: var(--black-color);
-  cursor: pointer;
-}
-
-.get_quote,
-button {
-  padding: 0.3125em 1.875em;
-  background: var(--header-color);
-  border-radius: 33px;
-}
-
-.get_quote a {
-  color: var(--faded-white);
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-#check,
-.chkbtn {
-  display: none;
-}
-
-.chkbtn {
-  font-size: 2rem;
-}
-
-button {
-  padding: 15px 70px;
-  border: none;
-  font-size: 20px;
-  color: var(--faded-white);
-}
-
-.container {
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 100px 0;
-}
-
-.comment {
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 15px;
-  width: 450px;
-}
-
-.the_journey {
-  font-size: 1.875rem;
-  color: hsla(0, 3%, 42%, 1);
-}
-
-.design {
-  font-size: 3.75rem;
-  line-height: 1.2;
-}
-
-.design span {
-  display: block;
-}
-
-.container img {
-  width: 650px;
-}
-
-@media screen and (max-width: 720px) {
-  .nav-bar {
-    padding: 0 20px;
-  }
-
-  .chkbtn {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    top: 100px;
-    width: 50%;
-    right: -100%;
-    height: 50%;
-    font-size: 18px;
-    background: hsla(43, 74%, 49%, .2);
-    transition: all .5s;
-  }
-
-  .get_quote a {
-    font-size: 14px;
-  }
-
-  .flex-column {
-    flex-direction: column;
-  }
-
-  #check:checked~ul {
-    right: 0;
-    color: burlywood;
-  }
-
-  .logo-color {
-    font-size: 1.5rem;
-  }
-
-  .font-classified {
-    font-size: 1.125rem;
-  }
-
-  .container {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  /*  */
-/* .comment {
-  gap: 40px;
-  width: 100%;
-}
-
-.container img {
-  width: 100%;
-} */
