@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+  <link rel="shortcut icon" href="./assets/Fav_icon/icons8-home-40.png" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -13,19 +16,40 @@
 
 <body>
   <header>
-    <div class="nav-bar">
-      <input type="checkbox" id="check" name="">
-      <h2>K<span class="font-classified">2_</span>rocker</h2>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Get a Quote</a></li>
-      </ul>
-      <label for="check">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </div>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./pages/html_pages/about.html">About</a></li>
+          <li><a href="./pages/html_pages/quote.html" class="get_quote">Get a Quote</a></li>
+        </ul>
+        <h1 class="logo">K<span class="font-classified">2_</span>rocker</h2></h1>
+      </div>
+    </nav>
   </header>
+  <div class="first_container flex-defined flex-column w-100">
+    <div class="comment flex-defined w-100">
+      <p class="the_journey">LET THE JOURNEY BEGIN...</p>
+      <h3 class="design">Get YOuR Best <span>PossiBle</span> UI & Ux DOne.</h3>
+      <button class="button">Projects</button>
+    </div>
+    <img src="./assets/images/portfolio-image.svg" class="w-100" alt="">
+  </div>
+  <!-- <div>
+    <div>
+      <div>
+        <img src="./assets/logo/Ellipse_1.png" alt="">
+        <figcaption>KARTHIK</figcaption>
+      </div>
+
+    </div>
+  </div> -->
 </body>
 
 </html>
