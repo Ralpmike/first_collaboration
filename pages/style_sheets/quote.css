@@ -88,6 +88,7 @@ ul li .get_quote, button {
 .navbar a:hover {
   color: goldenrod;
 }
+
 @media (max-width: 768px) {
   .navbar {
     opacity: 0.95;
